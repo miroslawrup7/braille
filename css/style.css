@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1.4em;
+  vertical-align: baseline;
+  text-decoration: none;
+  outline: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #eedec6;
+  color: #1e1308;
+  font-size: 14px;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 90px;
+  z-index: 999;
+  display: block;
+}
+
+.carousel {
+  margin-top: 90px;
+  display: block;
+}
+
+.container {
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main-container {
+  margin-bottom: 30px;
+}
+
+.page-header {
+  font-size: 300%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.belka {
+  display: block;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  height: 23px;
+  background-image: url("http://braille.pl/sites/all/themes/braile/css/img/belka.jpg");
+  background-repeat: no-repeat;
+  background-color: #ecbd63;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+article {
+  font-size: 18px;
+}
+
+article a:link,
+article a:visited {
+  color: #28511d;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.navbar-brand {
+  font-family: "Dancing Script", cursive;
+  color: #ecbd63;
+  font-size: 25px;
+  padding-top: 1rem;
+  padding-bottom: 0.3rem;
+  margin-right: 3rem;
+}
+
+.navbar-brand:hover {
+  color: #ecbd63;
+}
+
+ul.navbar-nav > li {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.navbar-nav a.nav-link {
+  color: #ecbd63;
+}
+
+.navbar-nav a.nav-link:hover {
+  color: #ebd7bb;
+}
+
+.top.row-fluid {
+  background-color: #32220e;
+  position: relative;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.dropdown-menu {
+  background-color: #32220e;
+}
+
+.dropdown-item {
+  color: #ebd7bb;
+  font-size: 12px;
+}
+
+.dropdown-item:hover {
+  background-color: #3a2710;
+  color: #ebd7bb;
+}
+
+.alfabet {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.col {
+  margin: 10px auto;
+}
+
+.inside {
+  width: fit-content;
+  padding: 10px 20px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 26px;
+  font-weight: 700;
+  height: 120px;
+  justify-content: end;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  text-shadow: 3px 4px 7px rgba(82, 82, 82, 0.8);
+}
+
+.inside img {
+  margin-top: 10px;
+}
+
+.inside.small-txt {
+  font-size: 10px;
+}
+
+.images img {
+  width: 15vw;
+  min-width: 100px;
+  max-width: 171px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+.navbar-toggler {
+  font-size: 1rem;
+  border-color: #edbe64;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28237, 170, 100, 1.00%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    width: 1300px;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+    padding-top: 1rem;
+    padding-bottom: 0.3rem;
+    margin-right: 3rem;
+  }
+  ul.navbar-nav > li {
+    font-size: 14px;
+  }
+
+  #navbar {
+    min-height: 87px;
+  }
+
+  .carousel {
+    margin-top: 87px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 1100px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 900px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 400px;
+  }
+
+  #navbar {
+    min-height: 121px;
+  }
+
+  .carousel {
+    margin-top: 121px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 360px;
+  }
+}
+
+/*  @ */
+/* ul.menu.nav.navbar-nav > li {
+  height: 76px;
+}
+
+ul li.collapsed,
+ul li.expanded,
+ul li.leaf {
+  list-style: none;
+}
+
+.navbar-nav > li {
+  float: left;
+}
+
+.nav > li {
+  position: relative;
+  display: block;
+}
+
+.navbar-nav > li {
+  float: left;
+} */
