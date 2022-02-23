@@ -32,6 +32,7 @@ body {
 .carousel {
   margin-top: 90px;
   display: block;
+  padding-bottom: 20px;
 }
 
 .container {
@@ -47,10 +48,6 @@ body {
 }
 
 .page-header {
-  font-size: 300%;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .belka {
@@ -66,6 +63,19 @@ body {
 
 h1 {
   font-weight: 300;
+  font-size: 300%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-weight: 700;
+
+  font-size: 110%;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 article {
@@ -75,6 +85,8 @@ article {
 article a:link,
 article a:visited {
   color: #28511d;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 p {
@@ -142,7 +154,8 @@ ul.navbar-nav > li {
 
 .inside {
   width: fit-content;
-  padding: 10px 20px;
+  height: 120px;
+  padding: 10px 10px;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.07);
   border-radius: 5px;
@@ -151,7 +164,7 @@ ul.navbar-nav > li {
   align-items: center;
   font-size: 26px;
   font-weight: 700;
-  height: 120px;
+
   justify-content: end;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -164,6 +177,68 @@ ul.navbar-nav > li {
 
 .inside.small-txt {
   font-size: 10px;
+}
+
+.inside-quiz {
+  width: 300px;
+  height: 100px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 26px;
+  font-weight: 700;
+  justify-content: left;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  text-shadow: 3px 4px 7px rgba(82, 82, 82, 0.8);
+}
+
+.inside-quiz img {
+  margin: 10px 10px 0 10px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 100px;
+  perspective: 1000px;
+  margin: 40px 20px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  background-color: #ecbd63;
+  color: #1e1308;
+  transform: rotateY(180deg);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  font-weight: 700;
 }
 
 .images img {
@@ -181,6 +256,33 @@ ul.navbar-nav > li {
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28237, 170, 100, 1.00%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+article ul li {
+  margin: 10px 0;
+}
+
+article ul li img {
+  margin: 10px 10px;
+}
+
+article img.moon,
+img.mangold {
+  display: block;
+  margin: 10px;
+}
+
+article img {
+  margin: 10px;
+}
+
+article.links a {
+  display: block;
+  margin: 3px 0;
+}
+
+article.links img {
+  margin-bottom: 50px;
 }
 
 @media (max-width: 1400px) {
