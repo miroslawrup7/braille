@@ -343,11 +343,27 @@ article.links img {
   .container {
     width: 700px;
   }
+
+  article.other .moon {
+    width: 70vw;
+  }
 }
 
 @media (max-width: 600px) {
   .container {
     width: 400px;
+  }
+
+  img.contact {
+    width: 60vw;
+  }
+
+  .publications img {
+    width: 70vw;
+  }
+
+  article.other .moon {
+    width: 70vw;
   }
 
   #navbar {
