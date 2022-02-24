@@ -47,9 +47,6 @@ body {
   margin-bottom: 30px;
 }
 
-.page-header {
-}
-
 .belka {
   display: block;
   width: 100%;
@@ -380,27 +377,3 @@ article.links img {
     width: 360px;
   }
 }
-
-/*  @ */
-/* ul.menu.nav.navbar-nav > li {
-  height: 76px;
-}
-
-ul li.collapsed,
-ul li.expanded,
-ul li.leaf {
-  list-style: none;
-}
-
-.navbar-nav > li {
-  float: left;
-}
-
-.nav > li {
-  position: relative;
-  display: block;
-}
-
-.navbar-nav > li {
-  float: left;
-} */
